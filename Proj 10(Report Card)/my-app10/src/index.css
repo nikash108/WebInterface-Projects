@@ -1,0 +1,36 @@
+:root {
+  font-family: 'DM Sans', 'Avenir Next', Avenir, sans-serif;
+  color: #2b291f;
+  background: #fcfaf1;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  --ink: #2b291f;
+  --muted: #85806e;
+  --line: #ece8d8;
+  --paper: #fffefa;
+  --canvas: #fcfaf1;
+  --forest: #705b12;
+  --forest-deep: #3d320d;
+  --mint: #ffed9a;
+  --lime: #ffd94f;
+  --coral: #c78b2c;
+  --serif: 'Newsreader', Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button, a { font: inherit; }
+button { color: inherit; }
+a { color: inherit; }
+::selection { color: var(--forest-deep); background: var(--mint); }

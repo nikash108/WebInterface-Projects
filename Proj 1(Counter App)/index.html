@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#f4f3ee">
+	<title>Counter</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Counter.css">
+	<script src="Counter.js" defer></script>
+</head>
+<body>
+	<main class="counter-app" aria-labelledby="app-title">
+		<header class="topbar">
+			<a class="wordmark" href="#" aria-label="Counter home">
+				<span class="wordmark-mark" aria-hidden="true">C</span>
+				<span>COUNTER</span>
+			</a>
+			<span class="saved-indicator"><span class="saved-dot" aria-hidden="true"></span> SAVED LOCALLY</span>
+		</header>
+
+		<section class="counter-panel" aria-labelledby="app-title">
+			<div class="panel-heading">
+				<div>
+					<p class="eyebrow">YOUR TALLY, AT A GLANCE</p>
+					<h1 id="app-title">The counter<span class="heading-period">.</span></h1>
+				</div>
+				<span class="counter-index" aria-hidden="true">NO. 001</span>
+			</div>
+
+			<div class="count-display" aria-live="polite" aria-atomic="true">
+				<span id="count" class="count-value">0</span>
+				<span class="count-caption">CURRENT COUNT</span>
+			</div>
+
+			<div class="counter-controls" aria-label="Counter controls">
+				<button class="count-button count-button-secondary" id="decrement" type="button" aria-label="Decrease count" title="Decrease count (down arrow)">
+					<span aria-hidden="true">−</span>
+				</button>
+				<button class="count-button count-button-primary" id="increment" type="button" aria-label="Increase count" title="Increase count (up arrow)">
+					<span aria-hidden="true">+</span>
+					<span class="increment-label">ADD</span>
+				</button>
+			</div>
+
+			<div class="panel-footer">
+				<label class="step-control" for="step">
+					<span class="step-label">STEP</span>
+					<input id="step" type="number" min="1" step="1" value="1" inputmode="numeric" aria-label="Step amount">
+				</label>
+				<button class="reset-button" id="reset" type="button" title="Reset count (R)">
+					<svg aria-hidden="true" viewBox="0 0 20 20" fill="none">
+						<path d="M3.2 9.1A6.8 6.8 0 1 1 4.7 14M3.2 4.8v4.7h4.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					<span>RESET</span>
+				</button>
+			</div>
+		</section>
+
+		<footer class="page-footer">
+			<span>SMALL TAPS. BIG TOTALS.</span>
+			<span class="keyboard-hint"><kbd>↑</kbd> <kbd>↓</kbd> TO COUNT <span class="hint-divider">/</span> <kbd>R</kbd> TO RESET</span>
+		</footer>
+	</main>
+</body>
+</html>
